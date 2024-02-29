@@ -3,9 +3,6 @@ let aCounter = 0; // Counts vowels.
 let stringLength; // Keeps track of input string length.
 let getString; // Used in multiple places, so needed it global.
 
-
-
-
 // View
 updateView();
 function updateView() {
@@ -13,20 +10,14 @@ function updateView() {
     <h1> Vowel Finder </h1>
     <input id="inputField" oninput="getInput()" /> <!-- See function getInput() on line 26. -->
     <button onclick="countVowels()">Count Vowels</button>
-    <div id="result" class="result"><ul></ul></div>
+    <div id="result" class="result"><ul></ul></div> 
     `
-
-
 }
 
-
-
 // Controller
-
 function getInput() {
     getString = document.getElementById('inputField').value // Gets current input value, combined with a oninput on line 14.
 }
-
 
 function countVowels() {
     aCounter = 0; // Makes sure that aCounter is 0 when the function is ran, so the values don't carry over from the previous execution.
